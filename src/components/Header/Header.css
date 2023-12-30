@@ -1,0 +1,59 @@
+.header {
+    height: 80px;
+    background: #1C2B35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    /* Adjust padding for smaller screens */
+    padding-right: 20px;
+    /* Adjust padding for smaller screens */
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow menu items to wrap to the next line on smaller screens */
+}
+
+.header-menu li {
+    list-style: none;
+    margin-left: 15px;
+    /* Adjust margin for smaller screens */
+    text-transform: capitalize;
+}
+
+.header-menu li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-menu li a:hover {
+    font-variant: small-caps;
+    color: gold;
+}
+
+/* Media Query for Tablets and larger screens */
+@media screen and (min-width: 768px) {
+    .header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .header-menu li {
+        margin-left: 20px;
+    }
+}
+
+/* Media Query for Desktops and larger screens */
+@media screen and (min-width: 1200px) {
+    .header {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .header-menu li {
+        margin-left: 30px;
+    }
+}
