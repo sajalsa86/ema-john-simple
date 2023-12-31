@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 .shop-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -8,4 +9,28 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
     margin: 50px;
+}
+
+/* Responsive styles for medium-sized screens */
+@media (max-width: 1200px) {
+    .shop-container {
+        /* grid-template-columns: 4fr 1fr; */
+    }
+
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px;
+    }
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .shop-container {
+        /* grid-template-columns: 4fr 1fr; */
+    }
+
+    .products-container {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
 }
