@@ -9,6 +9,7 @@ const getTotalShipping = seletedShipping => {
     return total;
 };
 
+
 export { getTotalPrice, getTotalShipping }
 
-//ei dui function er use hosse na but ami ekhane off rakhsi
+//ei dui function er use hosse na 
